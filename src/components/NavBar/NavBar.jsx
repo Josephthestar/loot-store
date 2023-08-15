@@ -49,7 +49,7 @@ function NavBar({ user, setUser }) {
           </Navbar.Collapse>
         </Container>
         <div className="shopping-cart">
-          <h2>Shopping Cart</h2>
+          <h2></h2>
           <ul>
             {cartItems.map((item, index) => (
               <li key={index}>{item.name}</li>

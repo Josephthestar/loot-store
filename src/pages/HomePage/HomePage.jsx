@@ -114,7 +114,7 @@ export default function AuthPage({ cart, setCart }) {
         and win Awesome Prizes !</h3>
 
       <div className="shopping-cart">
-        <h2>Shopping Cart</h2>
+        <h2>Shopping Car</h2>
         <div className="item-box">
           <ul>
             {cart.map(item => (
