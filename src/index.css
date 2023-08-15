@@ -1,54 +1,23 @@
-/* CSS Custom Properties */
-/* Apply to a specific element, e.g., the body */
+/* Body styling */
 body {
-  border-top: 0px solid rgb(0, 0, 0); /* Adjust the color, width, and style as needed */
-  margin-top: 0; /* Remove default margin to make the line stick to the top */
-}
-/* i added s solid border line */
-
-
-:root {
-  --white: #ffffff;
-  --tan-1: #ee1414;
-  --tan-2: #d3d1d1;
-  --tan-3: #a3a3a3;
-  --tan-4: #ff0000;
-  --orange: #d293c4;
-  --text-light: #b0b0b0;
-  --text-dark: #8ff1796f;
-}
-.navbar-full-width {
-  width: 100%;
-  left: 0;
-  right: 0;
-}
-
-
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-.bg-body-tertiary.navbar.navbar-expand-sm.navbar-light {
-  border-radius: 5px;
-}
-body {
-  margin: 0;
+  border-top: 0px solid rgb(0, 0, 0); /* Remove top border */
+  margin-top: 0; /* Remove default margin from the top */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; /* Font family for the page */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 2vmin;
-  height: 90vh;
-  /* background-image: url('https://hellosubscription.com/wp-content/uploads/2021/12/image_61a9058e3345a.png?quality=90&strip=all'); */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: scroll; /* Change to "scroll" for auto-align */
-  background-position: center; /* Adjust this for positioning */
-  background-color: rgba(1, 166, 119, 0.526); /* Adjust the color and alpha value as needed */
-  position: relative; /* Needed for absolute positioning of the glow */
+  padding: 2vmin; /* Add padding around the content */
+  height: 90vh; /* Set the height of the body */
+  background-image: url('https://img.freepik.com/free-vector/realistic-style-soap-bubbles-background_52683-44371.jpg?w=2000'); /* Set the background image */
+  background-size: cover; /* Cover the entire background */
+  background-repeat: no-repeat; /* No background image repetition */
+  background-attachment: scroll; /* Scroll the background */
+  background-position: center; /* Center the background image */
+  background-color: rgba(1, 166, 119, 0.526); /* Background color with transparency */
+  position: relative; /* Relative positioning for absolute elements */
 }
-/* Add this to your CSS */
+
+/* Sliding Background Animation */
 .sliding-background {
   position: absolute;
   top: 0;
@@ -57,121 +26,124 @@ body {
   height: 100%;
   background-size: cover;
   background-position: center;
-  animation: slideBackground 10s infinite alternate; /* Adjust the duration as needed */
+  animation: slideBackground 10s infinite alternate; /* Animation for sliding background */
 }
 
-/* @keyframes slideBackground {
-  0% {
-    background-image: url('image1.jpg');
-  }
-  100% {
-    background-image: url('image2.jpg'); 
-  }
-} */
-
-/* .padding-glow {
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  bottom: -10px;
-  left: -10px;
-  animation: glow 3s infinite;
-  content: "";
-  border-radius: 1vmin;
+/* Global Reset and Box Sizing */
+*, *:before, *:after {
+  box-sizing: border-box; /* Box sizing for consistent layout */
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
 }
 
-@keyframes glow {
-  20% {
-    box-shadow: 20 20 10px rgba(255, 0, 0, 0.5);
-  }
-  50% {
-    box-shadow: 20 20 20px rgba(0, 255, 0, 0.5);
-  }
-  100% {
-    box-shadow: 20 20 20px rgba(0, 0, 255, 0.5);
-  }
-} */
+/* Navbar styling */
+.navbar-full-width {
+  width: 100%; /* Navbar spans full width */
+  left: 0;
+  right: 0;
+}
 
+/* Background Styling */
+.background {
+  position: relative; /* Positioned relative for absolute elements */
+  /* background-image: url('https://static.vecteezy.com/system/resources/previews/014/068/547/original/background-with-geometric-shape-3d-rendering-for-display-products-and-a-banner-on-the-website-minimal-mockup-with-sphere-pattern-empty-showcase-for-ads-realistic-3d-white-balls-and-bubbles-vector.jpg'); */ /* Background image */
+  background-size: cover; /* Cover the entire background */
+  background-repeat: no-repeat; /* No background image repetition */
+  background-position: center; /* Center the background image */
+  width: 100vw; /* 100% viewport width */
+  height: 100vh; /* 100% viewport height */
+}
+
+/* Second Photo Styling */
+.second-photo {
+  position: absolute; /* Positioned absolutely */
+  bottom: 0; /* Positioned at the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  width: 200px; /* Set width */
+  height: 150px; /* Set height */
+  /* background-image: url('https://media.istockphoto.com/id/1134949127/vector/soap-bubbles-background.jpg?s=612x612&w=0&k=20&c=43TP5GO5J4iPdsb1V5Aibw9fW6N-usji0Vxb3-ejIDI='); */ /* Background image */
+  background-size: cover; /* Cover the entire background */
+  background-repeat: no-repeat; /* No background image repetition */
+  background-position: center; /* Center the background image */
+  border: 2px solid white; /* Add a white border */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Main Content */
 main {
-  margin: 0 auto;
-  max-width: 1000px;
-  padding: 0 10px 0 10px;
+  margin: 0 auto; /* Center the main content */
+  max-width: 1000px; /* Maximum width for the content */
+  padding: 0 10px; /* Add padding to the sides */
 }
 
+/* Card Styling */
 .card-container {
-  display: inline-block;
-  margin: 15px 15px;
-  text-align: center;
+  display: inline-block; /* Display inline block */
+  margin: 15px; /* Add margin around cards */
+  text-align: center; /* Center the text inside cards */
 }
 
-.card-img-top{
-  max-width: 286px;
-  max-height: 170.33px;
+.card-img-top {
+  max-width: 286px; /* Set maximum width for card image */
+  max-height: 170.33px; /* Set maximum height for card image */
 }
 
+/* Card Text Styling */
 .card-text {
-  min-height: 50px;
+  min-height: 50px; /* Set minimum height for card text */
 }
 
-.detail-card {
-  display: flex;
-  justify-content: center;
-}
-
-.icon {
-  width: 25%;
-  height: 25%;
-  margin-top: 50px;
-}
-
+/* Heading Styling */
 h1, h3 {
-  margin: 5% 0 10% 0;
+  margin: 5% 0 10%; /* Set margins for headings */
 }
 
 h3 {
-  text-align: left;
+  text-align: left; /* Align heading text to the left */
 }
 
 h1, h3 {
-  color: #443be9;
-  /* //add anime loot box */
+  color: #443be9; /* Heading text color */
 }
 
+/* Text Styling */
 p {
-  color: var(--text-dark);
-  text-align: left;
-  margin-left: 20px;
+  color: var(--text-dark); /* Set text color */
+  text-align: left; /* Align text to the left */
+  margin-left: 20px; /* Add left margin */
 }
 
+/* Navbar Text Styling */
 .navbar-text {
-  color: var(--orange)
+  color: var(--orange); /* Set text color */
 }
 
+/* List Item Styling */
 li {
-  color: var(--tan-2);
+  color: var(--tan-2); /* Set text color */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
+/* Root Element */
 #root {
-  height: 100%;
+  height: 100%; /* Set height for root element */
 }
 
+/* Alignment Classes */
 .align-ctr {
-  text-align: center;
+  text-align: center; /* Center align text */
 }
 
 .align-rt {
-  text-align: right;
+  text-align: right; /* Right align text */
 }
 
+/* Smaller Font Size */
 .smaller {
-  font-size: smaller;
+  font-size: smaller; /* Set smaller font size */
 }
 
+/* Flexbox Centering */
 .flex-ctr-ctr {
   display: flex;
   justify-content: center;
@@ -186,10 +158,12 @@ code {
   justify-content: flex-end;
 }
 
+/* Vertical Scroll */
 .scroll-y {
-  overflow-y: scroll;
+  overflow-y: scroll; /* Enable vertical scrolling */
 }
 
+/* Section Heading */
 .section-heading {
   display: flex;
   justify-content: space-around;
@@ -203,6 +177,7 @@ code {
   font-size: 2vmin;
 }
 
+/* Form Container */
 .form-container {
   padding: 3vmin;
   background-color: var(--tan-1);
@@ -210,11 +185,13 @@ code {
   border-radius: 1vmin;
 }
 
+/* Error Message */
 p.error-message {
   color: var(--orange);
   text-align: center;
 }
 
+/* Form Grid */
 form {
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -222,19 +199,21 @@ form {
   color: var(--text-light);
 }
 
+/* Label Styling */
 label {
   font-size: 2vmin;
   display: flex;
   align-items: center;
 }
 
+/* Input Styling */
 input {
   padding: 1vmin;
   font-size: 2vmin;
   border: .1vmin solid var(--tan-3);
   border-radius: .5vmin;
   color: var(--text-dark);
-  background-image: none !important; /* prevent lastpass */
+  background-image: none !important;
   outline: none;
 }
 
@@ -242,6 +221,7 @@ input:focus {
   border-color: var(--orange);
 }
 
+/* Button Styling */
 button, a.button {
   margin: 1vmin;
   padding: 1vmin;
@@ -257,6 +237,7 @@ button, a.button {
   cursor: pointer;
 }
 
+/* Button Sizes */
 button.btn-sm {
   font-size: 1.5vmin;
   padding: .6vmin .8vmin;
@@ -265,14 +246,4 @@ button.btn-sm {
 button.btn-xs {
   font-size: 1vmin;
   padding: .4vmin .5vmin;
-}
-
-button:disabled, form:invalid button[type="submit"] {
-  cursor: not-allowed;
-  background-color: var(--tan-4);
-}
-
-button[type="submit"] {
-  grid-column: span 2;
-  margin: 1vmin 0 0;
 }

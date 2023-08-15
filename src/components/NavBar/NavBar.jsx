@@ -26,7 +26,7 @@ function NavBar({ user, setUser }) {
       <Navbar expand='sm' className="bg-transparent">
         <Container fluid>
           <Navbar.Brand className="navbar-brand">
-            <Link to="/">anime-lootsnack-store</Link>
+            <Link to="/">Anime Loot Snack Store</Link>
           </Navbar.Brand>
           <Navbar.Toggle />
 

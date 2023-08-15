@@ -40,7 +40,7 @@ export default function NewEntryPage({ addEntry }) {
       console.error("Failed to create a new entry:", error.message);
     }
   }
-
+// NewEntryPage started something here with bracket
   return (
     <>
       <h1>Add Merchandise for Extra $10 On-Top of Order</h1>

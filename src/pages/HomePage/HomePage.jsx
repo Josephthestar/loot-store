@@ -28,7 +28,7 @@ export default function AuthPage({ cart, setCart }) {
     };
     setCart(prevCart => [...prevCart, newItem]);
   };
-
+  
   return (
     <main className="container">
       <Navbar bg="">
@@ -44,8 +44,10 @@ export default function AuthPage({ cart, setCart }) {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-
-      <h1>anime-loot-item-page</h1>
+      {/* // NewEntryPage started something here with bracket */}
+      <h1>This is your one stop shop for anime-lootsnacks-around the world. 
+        Wanna try snacks around the world from the comfort of your home 
+        and win Awesome Prizes !</h1>
       {/* <div className="border-top"></div> */}
 
       <Carousel>
@@ -59,7 +61,7 @@ export default function AuthPage({ cart, setCart }) {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://i.ytimg.com/vi/xHBnizIUo0w/maxresdefault.jpg"
+            src="https://animeboxclub.com/_next/image?url=%2Fimg%2Flanding1.png&w=1920&q=75"
             alt="Second slide"
           />
         </Carousel.Item>
@@ -83,20 +85,20 @@ export default function AuthPage({ cart, setCart }) {
       <div className="boxes-container">
         <div className="image-box">
           <Card className="image-card">
-            <Card.Img variant="top" src="https://w7.pngwing.com/pngs/909/655/png-transparent-one-piece-logo-monkey-d-luffy-one-piece-usopp-logo-pirate-hat-manga-jolly-roger-smiley-thumbnail.png" />
+            <Card.Img variant="top" src="https://asset2.mysubscriptionaddiction.com/wp-content/uploads/2019/06/Loot-Anime-Odyssey-March-2019-0003-733x733.jpg" />
             <Button onClick={handleAddToCart} variant="primary">Add to Cart</Button> {/* Using Bootstrap Button component */}
           </Card>
         </div>
 
         <div className="top-box">
-          <h2>Welcome to the Anime Loot Store!</h2>
+          <h2></h2>
           <p>Explore our wide range of anime-inspired products.</p>
         </div>
 
         <div
           className="bottom-box"
           style={{
-            backgroundImage: 'url("https://example.com/path-to-your-image.jpg")',
+            backgroundImage: 'url("https://staticg.sportskeeda.com/editor/2022/09/3009e-16625531008889-1920.jpg")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             color: 'red',
@@ -109,7 +111,7 @@ export default function AuthPage({ cart, setCart }) {
 
       <h3>This is your one stop shop for anime-lootsnacks-around the world. 
         Wanna try snacks around the world from the comfort of your home 
-        and with a guaranteed anime shirt of a random style with anime snacks?</h3>
+        and win Awesome Prizes !</h3>
 
       <div className="shopping-cart">
         <h2>Shopping Cart</h2>
